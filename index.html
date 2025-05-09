@@ -326,12 +326,13 @@ Yoga en Baires
     <img src="/yogaenbaires/images/destacados.png" alt="Los Deastacados del Camino">
 </div><br>
         <br>
+        
         <div class="section" style="padding-top: 0 !important;">
             <div class="columns is-multiline">
                 
                 
                 <div class="column is-half">
-                    <div class="project-slider-wrapper hover-effect"> 
+                    <div class="project-slider-wrapper hover-effect">
                         <div class="project-slider-container" id="project-0">
                             <div class="slider-controls">
                                 <button class="slider-arrow left-arrow" onclick="moveSlide(-1,  0 )">
@@ -355,6 +356,19 @@ Yoga en Baires
                                         
                                     </div>
                                     
+                                    
+                                    
+                                    <div class="media-slide">
+                                        <div class="video-container">
+                                            <video controls loop muted playsinline style="width:100%">
+                                                <source src="/content/en/projects/AYC/Post1.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="video-play"><i class="fas fa-play"></i></button>
+                                                <button class="video-mute"><i class="fas fa-volume-mute"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <button class="slider-arrow right-arrow" onclick="moveSlide(1,  0 )">
@@ -365,11 +379,11 @@ Yoga en Baires
                             <div class="slider-dots">
                                 
                                 
-                                <span class="dot active" 
-                                      onclick="goToSlide( 0 ,  0 )"></span>
+                                <span class="dot " onclick="goToSlide( 0 ,  0 )"></span>
                                 
-                                <span class="dot " 
-                                      onclick="goToSlide( 1 ,  0 )"></span>
+                                <span class="dot " onclick="goToSlide( 1 ,  0 )"></span>
+                                
+                                <span class="dot " onclick="goToSlide( 2 ,  0 )"></span>
                                 
                             </div>
                         </div>
@@ -425,12 +439,11 @@ Yoga en Baires
 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 
                 <div class="column is-half">
-                    <div class="project-slider-wrapper hover-effect"> 
+                    <div class="project-slider-wrapper hover-effect">
                         <div class="project-slider-container" id="project-1">
                             <div class="slider-controls">
                                 <button class="slider-arrow left-arrow" onclick="moveSlide(-1,  1 )">
@@ -454,6 +467,19 @@ Yoga en Baires
                                         
                                     </div>
                                     
+                                    
+                                    
+                                    <div class="media-slide">
+                                        <div class="video-container">
+                                            <video controls loop muted playsinline style="width:100%">
+                                                <source src="/content/en/projects/AYC/Post1.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="video-play"><i class="fas fa-play"></i></button>
+                                                <button class="video-mute"><i class="fas fa-volume-mute"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <button class="slider-arrow right-arrow" onclick="moveSlide(1,  1 )">
@@ -464,11 +490,11 @@ Yoga en Baires
                             <div class="slider-dots">
                                 
                                 
-                                <span class="dot active" 
-                                      onclick="goToSlide( 0 ,  1 )"></span>
+                                <span class="dot " onclick="goToSlide( 0 ,  1 )"></span>
                                 
-                                <span class="dot " 
-                                      onclick="goToSlide( 1 ,  1 )"></span>
+                                <span class="dot " onclick="goToSlide( 1 ,  1 )"></span>
+                                
+                                <span class="dot " onclick="goToSlide( 2 ,  1 )"></span>
                                 
                             </div>
                         </div>
@@ -524,7 +550,6 @@ Yoga en Baires
 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 
@@ -760,132 +785,168 @@ Yoga en Baires
 
 
 <script>
-
-const projectSlides = {};
-
-document.addEventListener('DOMContentLoaded', function() {
     
-    document.querySelectorAll('.project-slider-container').forEach(container => {
-        const id = container.id.split('-')[1];
-        projectSlides[id] = 0;
+    const projectSlides = {};
+    
+    document.addEventListener('DOMContentLoaded', function() {
         
-        
-        container.querySelectorAll('.video-play').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const video = this.closest('.video-container').querySelector('video');
-                if(video.paused) {
-                    video.play();
-                    this.innerHTML = '<i class="fas fa-pause"></i>';
-                } else {
-                    video.pause();
-                    this.innerHTML = '<i class="fas fa-play"></i>';
+        document.querySelectorAll('.project-slider-container').forEach(container => {
+            const id = container.id.split('-')[1];
+            projectSlides[id] = 0;
+            
+            
+            container.querySelectorAll('.video-container').forEach(videoContainer => {
+                const video = videoContainer.querySelector('video');
+                const playBtn = videoContainer.querySelector('.video-play');
+                const muteBtn = videoContainer.querySelector('.video-mute');
+                
+                
+                if (video) {
+                    video.muted = true;
+                    video.playsInline = true;
+                    
+                    
+                    if (muteBtn) {
+                        muteBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                    }
+                    
+                    
+                    video.addEventListener('play', () => {
+                        if (playBtn) playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    });
+                    
+                    video.addEventListener('pause', () => {
+                        if (playBtn) playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    });
+                }
+                
+                
+                if (playBtn) {
+                    playBtn.addEventListener('click', function() {
+                        if (video.paused) {
+                            video.play().catch(e => console.log("Play failed:", e));
+                        } else {
+                            video.pause();
+                        }
+                    });
+                }
+                
+                
+                if (muteBtn) {
+                    muteBtn.addEventListener('click', function() {
+                        video.muted = !video.muted;
+                        this.innerHTML = video.muted ? 
+                            '<i class="fas fa-volume-mute"></i>' : 
+                            '<i class="fas fa-volume-up"></i>';
+                    });
                 }
             });
+    
+            
+            const firstVideo = container.querySelector('.media-slide.active video');
+            if (firstVideo) {
+                firstVideo.play().catch(e => console.log("Autoplay prevented:", e));
+            }
         });
-        
-        container.querySelectorAll('.video-mute').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const video = this.closest('.video-container').querySelector('video');
-                video.muted = !video.muted;
-                this.innerHTML = video.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
-            });
-        });
-
-        
-        const firstVideo = container.querySelector('.media-slide.active video');
-        if (firstVideo) {
-            firstVideo.play().catch(e => console.log("Autoplay prevented:", e));
-        }
     });
-});
-
-function moveSlide(direction, projectId) {
-    const container = document.getElementById(`project-${projectId}`);
-    if (!container) return;
     
-    const slides = container.querySelectorAll('.media-slide');
-    const dots = container.querySelectorAll('.dot');
-    
-    
-    slides[projectSlides[projectId]]?.classList.remove('active');
-    dots[projectSlides[projectId]]?.classList.remove('active');
-    
-    
-    projectSlides[projectId] += direction;
-    
-    
-    if (projectSlides[projectId] >= slides.length) {
-        projectSlides[projectId] = 0;
-    } else if (projectSlides[projectId] < 0) {
-        projectSlides[projectId] = slides.length - 1;
-    }
-    
-    
-    slides[projectSlides[projectId]]?.classList.add('active');
-    dots[projectSlides[projectId]]?.classList.add('active');
-    
-    
-    const newSlide = slides[projectSlides[projectId]];
-    if (newSlide) {
-        const video = newSlide.querySelector('video');
-        if (video) {
-            video.play().catch(e => console.log("Autoplay prevented:", e));
-        }
-    }
-    
-    
-    slides.forEach((slide, index) => {
-        if (index !== projectSlides[projectId]) {
-            const otherVideo = slide.querySelector('video');
-            if (otherVideo) {
-                otherVideo.pause();
-                const playBtn = slide.querySelector('.video-play');
+    function moveSlide(direction, projectId) {
+        const container = document.getElementById(`project-${projectId}`);
+        if (!container) return;
+        
+        const slides = container.querySelectorAll('.media-slide');
+        const dots = container.querySelectorAll('.dot');
+        
+        
+        const currentSlide = slides[projectSlides[projectId]];
+        if (currentSlide) {
+            const currentVideo = currentSlide.querySelector('video');
+            if (currentVideo) {
+                currentVideo.pause();
+                const playBtn = currentSlide.querySelector('.video-play');
                 if (playBtn) playBtn.innerHTML = '<i class="fas fa-play"></i>';
             }
         }
-    });
-}
-
-function goToSlide(index, projectId) {
-    const container = document.getElementById(`project-${projectId}`);
-    if (!container) return;
-    
-    const slides = container.querySelectorAll('.media-slide');
-    const dots = container.querySelectorAll('.dot');
-    
-    
-    slides[projectSlides[projectId]]?.classList.remove('active');
-    dots[projectSlides[projectId]]?.classList.remove('active');
-    
-    
-    projectSlides[projectId] = index;
-    
-    
-    slides[projectSlides[projectId]]?.classList.add('active');
-    dots[projectSlides[projectId]]?.classList.add('active');
-    
-    
-    const newSlide = slides[projectSlides[projectId]];
-    if (newSlide) {
-        const video = newSlide.querySelector('video');
-        if (video) {
-            video.play().catch(e => console.log("Autoplay prevented:", e));
+        
+        
+        currentSlide?.classList.remove('active');
+        dots[projectSlides[projectId]]?.classList.remove('active');
+        
+        
+        projectSlides[projectId] += direction;
+        
+        
+        if (projectSlides[projectId] >= slides.length) {
+            projectSlides[projectId] = 0;
+        } else if (projectSlides[projectId] < 0) {
+            projectSlides[projectId] = slides.length - 1;
+        }
+        
+        
+        const newSlide = slides[projectSlides[projectId]];
+        newSlide?.classList.add('active');
+        dots[projectSlides[projectId]]?.classList.add('active');
+        
+        
+        if (newSlide) {
+            const video = newSlide.querySelector('video');
+            if (video) {
+                video.currentTime = 0; 
+                video.play().catch(e => {
+                    console.log("Autoplay prevented:", e);
+                    
+                    const playBtn = newSlide.querySelector('.video-play');
+                    if (playBtn) playBtn.style.display = 'block';
+                });
+            }
         }
     }
     
-    
-    slides.forEach((slide, i) => {
-        if (i !== projectSlides[projectId]) {
-            const otherVideo = slide.querySelector('video');
-            if (otherVideo) {
-                otherVideo.pause();
-                const playBtn = slide.querySelector('.video-play');
+    function goToSlide(index, projectId) {
+        const container = document.getElementById(`project-${projectId}`);
+        if (!container) return;
+        
+        const slides = container.querySelectorAll('.media-slide');
+        const dots = container.querySelectorAll('.dot');
+        
+        
+        const currentSlide = slides[projectSlides[projectId]];
+        if (currentSlide) {
+            const currentVideo = currentSlide.querySelector('video');
+            if (currentVideo) {
+                currentVideo.pause();
+                const playBtn = currentSlide.querySelector('.video-play');
                 if (playBtn) playBtn.innerHTML = '<i class="fas fa-play"></i>';
             }
         }
-    });
-}
-</script>
+        
+        
+        currentSlide?.classList.remove('active');
+        dots[projectSlides[projectId]]?.classList.remove('active');
+        
+        
+        projectSlides[projectId] = index;
+        
+        
+        const newSlide = slides[projectSlides[projectId]];
+        newSlide?.classList.add('active');
+        dots[projectSlides[projectId]]?.classList.add('active');
+        
+        
+        if (newSlide) {
+            const video = newSlide.querySelector('video');
+            if (video) {
+                video.currentTime = 0; 
+                video.play().catch(e => {
+                    console.log("Autoplay prevented:", e);
+                    
+                    const playBtn = newSlide.querySelector('.video-play');
+                    if (playBtn) playBtn.style.display = 'block';
+                });
+            }
+        }
+    }
+    </script>
 
     
     <div class="section" id="all-posts">
