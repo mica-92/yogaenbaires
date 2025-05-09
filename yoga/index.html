@@ -83,7 +83,7 @@ El Semillero - Yoga en Baires
             <a class="navbar-item" href="/yogaenbaires/#el_sendero">El Sendero</a>
           <a class="navbar-item" href="/yogaenbaires/#el_semillero">El Semillero</a>
           <a class="navbar-item" href="/yogaenbaires/#acerca">Acerca de Yoga en Baires</a>
-          <a class="navbar-item">|</a>  
+          <a class="separator"><a class="navbar-item">|</a></a>  
           <a class="navbar-item"><a class="yeb-share-button yeb-whatsapp" 
           href="https://wa.me/?text=el-semillero%20https%3a%2f%2fmica-92.github.io%2fyogaenbaires%2fyoga%2f" 
           target="_blank"
@@ -185,6 +185,23 @@ El Semillero - Yoga en Baires
 .navbar-item:hover {
     background-color: transparent !important;
 }
+
+@media (max-width: 768px) {  
+  .navbar-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+    gap: 10px;  
+  }
+  
+  .navbar-social .separator {
+    display: none;  
+  }
+  
+  .navbar-social a {
+    display: inline-flex;  
+  }
+}
 </style>
 
 <script>
@@ -202,6 +219,17 @@ El Semillero - Yoga en Baires
             });
         }
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 768) { 
+    const socialContainer = document.querySelector('.navbar-social');
+    const separator = socialContainer.querySelector('.separator');
+    
+    if (separator) {
+      separator.remove(); 
+    }
+  }
+});
 </script>
 
                 

@@ -94,7 +94,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
             <a class="navbar-item" href="/yogaenbaires/#el_sendero">El Sendero</a>
           <a class="navbar-item" href="/yogaenbaires/#el_semillero">El Semillero</a>
           <a class="navbar-item" href="/yogaenbaires/#acerca">Acerca de Yoga en Baires</a>
-          <a class="navbar-item">|</a>  
+          <a class="separator"><a class="navbar-item">|</a></a>  
           <a class="navbar-item"><a class="yeb-share-button yeb-whatsapp" 
           href="https://wa.me/?text=Estudio%20Tradicional%20De%20Ashtanga%20Yoga%20a%20Cargo%20De%20Ernesto%20Mu%c3%b1oz%20Y%20Ubicado%20en%20El%20Coraz%c3%b3n%20De%20Caballito.%20https%3a%2f%2fmica-92.github.io%2fyogaenbaires%2fdescripcion%2festudio-tradicional-de-ashtanga-yoga-a-cargo-de-ernesto-mu%25C3%25B1oz-y-ubicado-en-el-coraz%25C3%25B3n-de-caballito.%2f" 
           target="_blank"
@@ -196,6 +196,23 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
 .navbar-item:hover {
     background-color: transparent !important;
 }
+
+@media (max-width: 768px) {  
+  .navbar-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+    gap: 10px;  
+  }
+  
+  .navbar-social .separator {
+    display: none;  
+  }
+  
+  .navbar-social a {
+    display: inline-flex;  
+  }
+}
 </style>
 
 <script>
@@ -213,6 +230,17 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
             });
         }
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 768) { 
+    const socialContainer = document.querySelector('.navbar-social');
+    const separator = socialContainer.querySelector('.separator');
+    
+    if (separator) {
+      separator.remove(); 
+    }
+  }
+});
 </script>
 
                 
