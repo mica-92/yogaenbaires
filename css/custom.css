@@ -269,6 +269,7 @@
     .elegant-map-container {
         margin: 1rem auto;
         border-radius: 3px;
+        height: 20rem;
     }
     
     .map-legend {
