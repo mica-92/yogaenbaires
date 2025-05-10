@@ -1106,15 +1106,25 @@ function goToSlide(index, projectId) {
                 
                 
                     
-                    <div class="review-card style-vinyasa">
-                        <div class="review-content">
-                            El lugar es un oasis de paz.
-                        </div>
-                        
-                        <div class="review-author">
-                            — Lucía
-                        </div>
-                        
+                    
+                    <div class="review-card style-default mobile-first-review">
+                            <div class="review-content">
+                                
+                                
+                                
+
+
+
+
+
+
+                                El lugar es un oasis de paz.
+                            </div>
+                            
+                            <div class="review-author">
+                                — Lucía
+                            </div>
+                            
                     </div>
                 
             
@@ -1136,15 +1146,25 @@ function goToSlide(index, projectId) {
                 
                 
                     
-                    <div class="review-card style-vinyasa">
-                        <div class="review-content">
-                            Perfecto para desconectar.
-                        </div>
-                        
-                        <div class="review-author">
-                            — Pablo
-                        </div>
-                        
+                    
+                    <div class="review-card style-default mobile-first-review">
+                            <div class="review-content">
+                                
+                                
+                                
+
+
+
+
+
+
+                                Perfecto para desconectar.
+                            </div>
+                            
+                            <div class="review-author">
+                                — Pablo
+                            </div>
+                            
                     </div>
                 
             
@@ -1154,15 +1174,25 @@ function goToSlide(index, projectId) {
                 
                 
                     
-                    <div class="review-card style-vinyasa">
-                        <div class="review-content">
-                            Las meditaciones son transformadoras.
-                        </div>
-                        
-                        <div class="review-author">
-                            — Valeria
-                        </div>
-                        
+                    
+                    <div class="review-card style-default mobile-first-review">
+                            <div class="review-content">
+                                
+                                
+                                
+
+
+
+
+
+
+                                Las meditaciones son transformadoras.
+                            </div>
+                            
+                            <div class="review-author">
+                                — Valeria
+                            </div>
+                            
                     </div>
                 
             
@@ -1238,13 +1268,15 @@ function goToSlide(index, projectId) {
 }
 
  
+ 
 .review-card {
     break-inside: avoid;
     margin-bottom: 1.5rem;
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .review-card.style-vinyasa {
@@ -1260,14 +1292,17 @@ function goToSlide(index, projectId) {
 
 .review-content {
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    text-align: center;
 }
 
 .review-author {
     text-align: right;
-    font-weight: 600;
-    color: #ad1457;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
  
@@ -1282,6 +1317,48 @@ function goToSlide(index, projectId) {
         margin-bottom: 1rem;
         width: 100%;
     }
+}
+
+.style-hatha { 
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.style-default {
+    background-color: #f5f5f5;
+    color: #333333;
+    border: 1px solid #e0e0e0;
+}
+
+ 
+.review-card.style-hatha .fa-quote-left {
+    color: #1976d2;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+}
+
+ 
+.style-hatha:hover, 
+.style-hatha:hover .fa-quote-left {
+    background-color: #e3f2fd;
+    color: #1976d2;  
+    opacity: 1;  
+}
+
+ 
+.review-card.style-hatha .fa-quote-left {
+    color: #1976d2;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;  
+}
+
+.review-card.style-hatha:hover .fa-quote-left {
+    opacity: 1;
+    transform: scale(1.05);  
 }
 </style>
 
@@ -1377,12 +1454,18 @@ function goToSlide(index, projectId) {
         <span class="footer-text">            
 
             Hecho con <i class="fa fa-heart"></i>  | YogaEnBaires, 2025 <br>
-            </span>
+        <i class="fa fa-spa"></i><i>Lokāḥ Samastāḥ Sukhino Bhavantu</i><i class="fa fa-spa"></i>
+    
+        </span>
         </span>
     </div>
 </div>
 
 <style>
+    .fa {
+        margin: 0.3rem  !important;
+    }
+
     .fab {
     font-size: 0.9rem !important;
     margin-left: 0.3rem !important;
