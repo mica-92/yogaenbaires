@@ -104,8 +104,10 @@
             
             
             <div class="navbar-social">
-            <a class="separator is-hidden-mobile"><a class="navbar-item">|</a></a>
-                <div class="navbar-item">Compartí: </div>
+                
+                <div class="separator is-hidden-mobile no-hover"><b>|</b></div>
+                <div class="navbar-item no-hover">Compartí: </div>
+
                 <div class="social-icons">
                     <a class="yeb-share-button yeb-whatsapp" 
                        href="https://wa.me/?text=%3cblockquote%3e%0a%3cp%3e60%20Min%3c%2fp%3e%0a%3c%2fblockquote%3e%20https%3a%2f%2fmica-92.github.io%2fyogaenbaires%2fduracion%2f60-min%2f" 
@@ -169,11 +171,18 @@
     margin-left: 0.5rem !important;
 }
 
- 
-.navbar-item:hover,
+.navbar-item:hover:not(.no-hover),
 .yeb-share-button:hover {
-    color: #CD5C5C !important;  
-    transform: none !important;  
+    color: #CD5C5C !important;
+    transform: none !important;
+}
+
+ 
+.no-hover,
+.no-hover:hover {
+    color: #6c6464 !important;
+    cursor: default !important;
+    transform: none !important;
 }
 
  
@@ -192,6 +201,8 @@
 .social-icons {
     display: flex;
     gap: 0.4rem;  
+    padding-left: 0rem !important;
+
 }
 
  
@@ -323,56 +334,6 @@
     <hr>
 
     <ul class="post-list">
-        
-        <li class="post-item">
-            <a href="https://mica-92.github.io/yogaenbaires/projects/ayc/" class="post-title">Caballito de Batalla</a>
-            
-
-<div class="post-taxonomy">
-    
-        
-        <a href="/yogaenbaires/barrio/caballito" 
-            class="taxonomy-item taxonomy-barrio">Caballito</a>
-        
-    
-
-    
-        
-        <a href="/yogaenbaires/estilo/ashtanga" 
-           class="taxonomy-item taxonomy-estilo">Ashtanga</a>
-        
-    
-    
-    
-        
-        <a href="/yogaenbaires/duracion/60-min" 
-           class="taxonomy-item taxonomy-duracion">&gt;60 min</a>
-        
-    
-    
-    
-        
-        <a href="/yogaenbaires/intensidad/media" 
-           class="taxonomy-item taxonomy-intensidad">Media</a>
-        
-        <a href="/yogaenbaires/intensidad/alta" 
-           class="taxonomy-item taxonomy-intensidad">Alta</a>
-        
-    
-    
-    
-        
-        <a href="/yogaenbaires/nivel/intermedio" 
-           class="taxonomy-item taxonomy-niveles">Intermedio</a>
-        
-        <a href="/yogaenbaires/nivel/avanzado" 
-           class="taxonomy-item taxonomy-niveles">Avanzado</a>
-        
-    
-    
-    
-</div>
-        </li>
         
         <li class="post-item">
             <a href="https://mica-92.github.io/yogaenbaires/projects/ymcs/" class="post-title">Esto es un proyecto</a>
@@ -515,31 +476,8 @@
                 <div class="section" id="footer"> 
     <div class="container has-text-centered">
         <hr>
-        <span class="footer-text">
+        <span class="footer-text">            
 
-            
-
-            
-                <a href="https://instagram.com/yogaenbaires" >
-                    <i class="fab fab fa-instagram"></i>
-                </a>
-            
-        
-                
-
-            
-        
-                
-
-            
-                <a href="https://www.tiktok.com/@yogaenbaires" >
-                    <i class="fab fab fa-tiktok"></i>
-                </a>
-            
-        
-                
-            
-            <br>
             Hecho con <i class="fa fa-heart"></i>  | YogaEnBaires, 2025 <br>
             </span>
         </span>

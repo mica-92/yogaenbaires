@@ -100,8 +100,10 @@ Estudio Tradicional De Ashtanga Yoga en El Corazón De Caballito. - Yoga en Bair
             
             
             <div class="navbar-social">
-            <a class="separator is-hidden-mobile"><a class="navbar-item">|</a></a>
-                <div class="navbar-item">Compartí: </div>
+                
+                <div class="separator is-hidden-mobile no-hover"><b>|</b></div>
+                <div class="navbar-item no-hover">Compartí: </div>
+
                 <div class="social-icons">
                     <a class="yeb-share-button yeb-whatsapp" 
                        href="https://wa.me/?text=Estudio%20Tradicional%20De%20Ashtanga%20YOga%20en%20El%20Coraz%c3%b3n%20De%20Caballito.%20https%3a%2f%2fmica-92.github.io%2fyogaenbaires%2fdescripcion%2festudio-tradicional-de-ashtanga-yoga-en-el-coraz%25C3%25B3n-de-caballito.%2f" 
@@ -165,11 +167,18 @@ Estudio Tradicional De Ashtanga Yoga en El Corazón De Caballito. - Yoga en Bair
     margin-left: 0.5rem !important;
 }
 
- 
-.navbar-item:hover,
+.navbar-item:hover:not(.no-hover),
 .yeb-share-button:hover {
-    color: #CD5C5C !important;  
-    transform: none !important;  
+    color: #CD5C5C !important;
+    transform: none !important;
+}
+
+ 
+.no-hover,
+.no-hover:hover {
+    color: #6c6464 !important;
+    cursor: default !important;
+    transform: none !important;
 }
 
  
@@ -188,6 +197,8 @@ Estudio Tradicional De Ashtanga Yoga en El Corazón De Caballito. - Yoga en Bair
 .social-icons {
     display: flex;
     gap: 0.4rem;  
+    padding-left: 0rem !important;
+
 }
 
  
@@ -461,31 +472,8 @@ Estudio Tradicional De Ashtanga Yoga en El Corazón De Caballito. - Yoga en Bair
                 <div class="section" id="footer"> 
     <div class="container has-text-centered">
         <hr>
-        <span class="footer-text">
+        <span class="footer-text">            
 
-            
-
-            
-                <a href="https://instagram.com/yogaenbaires" >
-                    <i class="fab fab fa-instagram"></i>
-                </a>
-            
-        
-                
-
-            
-        
-                
-
-            
-                <a href="https://www.tiktok.com/@yogaenbaires" >
-                    <i class="fab fab fa-tiktok"></i>
-                </a>
-            
-        
-                
-            
-            <br>
             Hecho con <i class="fa fa-heart"></i>  | YogaEnBaires, 2025 <br>
             </span>
         </span>

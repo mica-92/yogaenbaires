@@ -103,8 +103,10 @@ Projects - Yoga en Baires
             
             
             <div class="navbar-social">
-            <a class="separator is-hidden-mobile"><a class="navbar-item">|</a></a>
-                <div class="navbar-item">Compartí: </div>
+                
+                <div class="separator is-hidden-mobile no-hover"><b>|</b></div>
+                <div class="navbar-item no-hover">Compartí: </div>
+
                 <div class="social-icons">
                     <a class="yeb-share-button yeb-whatsapp" 
                        href="https://wa.me/?text=Projects%20https%3a%2f%2fmica-92.github.io%2fyogaenbaires%2fprojects%2f" 
@@ -168,11 +170,18 @@ Projects - Yoga en Baires
     margin-left: 0.5rem !important;
 }
 
- 
-.navbar-item:hover,
+.navbar-item:hover:not(.no-hover),
 .yeb-share-button:hover {
-    color: #CD5C5C !important;  
-    transform: none !important;  
+    color: #CD5C5C !important;
+    transform: none !important;
+}
+
+ 
+.no-hover,
+.no-hover:hover {
+    color: #6c6464 !important;
+    cursor: default !important;
+    transform: none !important;
 }
 
  
@@ -191,6 +200,8 @@ Projects - Yoga en Baires
 .social-icons {
     display: flex;
     gap: 0.4rem;  
+    padding-left: 0rem !important;
+
 }
 
  
@@ -333,8 +344,8 @@ Projects - Yoga en Baires
         
 
         <li class="post-item">
-            <a href="https://mica-92.github.io/yogaenbaires/projects/ayc/" class="post-title">        
-                #1 - Caballito de Batalla
+            <a href="https://mica-92.github.io/yogaenbaires/projects/1---ashtanga-yoga-caballito/" class="post-title">        
+                #1 - Ashtanga Yoga Caballito
             </a>
             
             <div class="post-taxonomy">
@@ -357,8 +368,8 @@ Projects - Yoga en Baires
     
     
         
-        <a href="/yogaenbaires/duracion/60-min" 
-           class="taxonomy-item taxonomy-duracion">&gt;60 min</a>
+        <a href="/yogaenbaires/duracion/&#43;60-min" 
+           class="taxonomy-item taxonomy-duracion">&#43;60 min</a>
         
     
     
@@ -541,31 +552,8 @@ Projects - Yoga en Baires
                 <div class="section" id="footer"> 
     <div class="container has-text-centered">
         <hr>
-        <span class="footer-text">
+        <span class="footer-text">            
 
-            
-
-            
-                <a href="https://instagram.com/yogaenbaires" >
-                    <i class="fab fab fa-instagram"></i>
-                </a>
-            
-        
-                
-
-            
-        
-                
-
-            
-                <a href="https://www.tiktok.com/@yogaenbaires" >
-                    <i class="fab fab fa-tiktok"></i>
-                </a>
-            
-        
-                
-            
-            <br>
             Hecho con <i class="fa fa-heart"></i>  | YogaEnBaires, 2025 <br>
             </span>
         </span>
