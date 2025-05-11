@@ -1137,16 +1137,15 @@ function goToSlide(index, projectId) {
                 
                     
                     
-                    <div class="review-card style-default mobile-first-review">
+                    <div class="review-card style-hatha mobile-first-review">
                             <div class="review-content">
                                 
                                 
                                 
-
-
-
-
-
+                                
+                                
+                                
+                                <i class="fa fa-quote-left"></i>
 
                                 Las clases de Gong Bath son mágicas.
                             </div>
@@ -1177,16 +1176,15 @@ function goToSlide(index, projectId) {
                 
                     
                     
-                    <div class="review-card style-default mobile-first-review">
+                    <div class="review-card style-vinyasa mobile-first-review">
                             <div class="review-content">
                                 
+                                <i class="fa fa-exclamation"></i>
                                 
                                 
-
-
-
-
-
+                                
+                                
+                                
 
                                 Me cambió la energía por completo.
                             </div>
@@ -1210,11 +1208,10 @@ function goToSlide(index, projectId) {
                                 
                                 
                                 
-
-
-
-
-
+                                
+                                
+                                <i class="fa fa-moon"></i>
+                                
 
                                 Muy recomendado para principiantes.
                             </div>
@@ -1298,7 +1295,6 @@ function goToSlide(index, projectId) {
 }
 
  
- 
 .review-card {
     break-inside: avoid;
     margin-bottom: 1.5rem;
@@ -1307,12 +1303,6 @@ function goToSlide(index, projectId) {
     box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
     text-align: center;
-}
-
-.review-card.style-vinyasa {
-    background-color: #fce4ec;
-    color: #c2185b;
-    border: 1px solid #f8bbd0;
 }
 
 .review-card:hover {
@@ -1336,6 +1326,168 @@ function goToSlide(index, projectId) {
 }
 
  
+
+.style-hatha { 
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.review-card.style-hatha .fa-quote-left {
+    color: #1976d2;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+}
+
+.style-hatha:hover, 
+.style-hatha:hover .fa-quote-left {
+    background-color: #e3f2fd;
+    color: #1976d2;  
+    opacity: 1;  
+}
+
+.review-card.style-hatha .fa-quote-left {
+    color: #1976d2;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;  
+}
+
+ 
+.style-vinyasa { 
+    background-color: #fce4ec;
+    color: #c2185b;
+    border: 1px solid #f8bbd0;
+}
+
+.review-card.style-vinyasa .fa-exclamation {
+    color: #c2185b;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.style-vinyasa:hover,
+.style-vinyasa:hover .fa-exclamation {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.review-card.style-vinyasa:hover .fa-exclamation {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+ 
+.style-ashtanga { 
+    background-color: #e8f5e9;
+    color: #388e3c;
+    border: 1px solid #c8e6c9;
+}
+
+.review-card.style-ashtanga .fa-spa {
+    color: #388e3c;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.style-ashtanga:hover,
+.style-ashtanga:hover .fa-spa {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.review-card.style-ashtanga:hover .fa-spa {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+ 
+.style-yin {
+    background-color: #f3e5f5;
+    color: #8e24aa;
+    border: 1px solid #e1bee7;
+}
+
+.review-card.style-yin .fa-user {
+    color: #8e24aa;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.style-yin:hover,
+.style-yin:hover .fa-user {
+    background-color: #f3e5f5;
+    color: #8e24aa;
+}
+
+.review-card.style-yin:hover .fa-user {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+ 
+.style-restaurativo { 
+    background-color: #fff8e1;
+    color: #ff8f00;
+    border: 1px solid #ffe0b2;
+}
+
+.review-card.style-restaurativo .fa-info {
+    color: #ff8f00;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.style-restaurativo:hover,
+.style-restaurativo:hover .fa-info {
+    background-color: #fff8e1;
+    color: #ff8f00;
+}
+
+.review-card.style-restaurativo:hover .fa-info {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+ 
+.style-default {
+    background-color: #f5f5f5;
+    color: #333333;
+    border: 1px solid #e0e0e0;
+}
+
+.review-card.style-default .fa-moon {
+    color: #333333;
+    margin-right: 8px;
+    font-size: 1.9em;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.style-default:hover,
+.style-default:hover .fa-moon {
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+.review-card.style-default:hover .fa-moon {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+
+ 
 @media (max-width: 768px) {
     .pinterest-reviews-container {
         columns: 1 !important;
@@ -1347,48 +1499,6 @@ function goToSlide(index, projectId) {
         margin-bottom: 1rem;
         width: 100%;
     }
-}
-
-.style-hatha { 
-    background-color: #e3f2fd;
-    color: #1976d2;
-    border: 1px solid #bbdefb;
-}
-
-.style-default {
-    background-color: #f5f5f5;
-    color: #333333;
-    border: 1px solid #e0e0e0;
-}
-
- 
-.review-card.style-hatha .fa-quote-left {
-    color: #1976d2;
-    margin-right: 8px;
-    font-size: 1.9em;
-    opacity: 0.7;
-}
-
- 
-.style-hatha:hover, 
-.style-hatha:hover .fa-quote-left {
-    background-color: #e3f2fd;
-    color: #1976d2;  
-    opacity: 1;  
-}
-
- 
-.review-card.style-hatha .fa-quote-left {
-    color: #1976d2;
-    margin-right: 8px;
-    font-size: 1.9em;
-    opacity: 0.7;
-    transition: all 0.3s ease;  
-}
-
-.review-card.style-hatha:hover .fa-quote-left {
-    opacity: 1;
-    transform: scale(1.05);  
 }
 </style>
 
