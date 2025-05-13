@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recoleta on Yoga en Baires</title>
-    <link>https://mica-92.github.io/yogaenbaires/barrio/recoleta/</link>
+    <link>http://localhost:1313/yogaenbaires/barrio/recoleta/</link>
     <description>Recent content in Recoleta on Yoga en Baires</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mica-92.github.io/yogaenbaires/barrio/recoleta/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/yogaenbaires/barrio/recoleta/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vinyasa Flow Recoleta</title>
-      <link>https://mica-92.github.io/yogaenbaires/projects/2-vinyasa-flow-recoleta/</link>
+      <link>http://localhost:1313/yogaenbaires/projects/2-vinyasa-flow-recoleta/</link>
       <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://mica-92.github.io/yogaenbaires/projects/2-vinyasa-flow-recoleta/</guid>
+      <guid>http://localhost:1313/yogaenbaires/projects/2-vinyasa-flow-recoleta/</guid>
       <description>En plena Recoleta, cerca de la icónica Biblioteca Nacional, Vinyasa Flow Recoleta atrae a yoguis que buscan dinamismo y creatividad en su práctica. Dirigido por Martín López, ex bailarín y profesor certificado en Power Yoga, el estudio fusiona secuencias fluidas con música en vivo (en clases especiales los viernes). Con capacidad para 20 personas, el espacio—iluminado por velas y luces tenues—tiene un ambiente moderno pero cálido. Lo que lo hace único: ofrecen &amp;ldquo;Yoga con Pesas&amp;rdquo; los martes, una combinación innovadora de fuerza y movilidad.</description>
     </item>
   </channel>

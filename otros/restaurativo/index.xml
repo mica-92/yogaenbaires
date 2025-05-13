@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Restaurativo on Yoga en Baires</title>
-    <link>https://mica-92.github.io/yogaenbaires/otros/restaurativo/</link>
+    <link>http://localhost:1313/yogaenbaires/otros/restaurativo/</link>
     <description>Recent content in Restaurativo on Yoga en Baires</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mica-92.github.io/yogaenbaires/otros/restaurativo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/yogaenbaires/otros/restaurativo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hatha Yoga Palermo</title>
-      <link>https://mica-92.github.io/yogaenbaires/projects/1-hatha-yoga-palermo/</link>
+      <link>http://localhost:1313/yogaenbaires/projects/1-hatha-yoga-palermo/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://mica-92.github.io/yogaenbaires/projects/1-hatha-yoga-palermo/</guid>
+      <guid>http://localhost:1313/yogaenbaires/projects/1-hatha-yoga-palermo/</guid>
       <description>Ubicado en el bohemio barrio de Palermo, a pocos pasos de Plaza Serrano, Hatha Yoga Palermo es un refugio de calma en medio de la ciudad. Fundado por la instructora Laura Ríos, con más de 15 años de experiencia en Hatha y Yoga Restaurativo, este estudio se destaca por su enfoque en la alineación precisa y la relajación profunda. Las clases, diseñadas para grupos reducidos (máximo 15 personas), incorporan props como bloques, mantas y cinturones para facilitar el acceso a las posturas.</description>
     </item>
   </channel>
