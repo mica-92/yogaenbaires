@@ -145,7 +145,7 @@ Kundalini - Yoga en Baires
 
             <div class="search-container">
                 <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="postSearch" placeholder="Buscar Estudios por Nombre, Categoria o #ID...">
+                <input type="text" id="postSearch" placeholder="Buscar por Nombre, Categoria o #ID...">
                 <div id="searchResults"></div>
             </div>
 
@@ -155,7 +155,7 @@ Kundalini - Yoga en Baires
                 <a href="/yogaenbaires/blog/">el semillero</a>
                 
                 <div class="taxonomy-section">
-                    <h3>Barrios</h3>
+                    <h3 class="categorias-title">Barrios</h3>
                     <div class="taxonomy-list">
                         
                             <a href="/yogaenbaires/barrio/belgrano" class="taxonomy-item">Belgrano</a>
@@ -168,7 +168,7 @@ Kundalini - Yoga en Baires
                         
                     </div>
                     
-                    <h3>Estilos</h3>
+                    <h3 class="categorias-title">Estilos</h3>
                     <div class="taxonomy-list">
                         
                             <a href="/yogaenbaires/estilo/ashtanga" class="taxonomy-item">Ashtanga</a>
@@ -183,7 +183,7 @@ Kundalini - Yoga en Baires
                         
                     </div>
                     
-                    <h3>Intensidad</h3>
+                    <h3 class="categorias-title">Intensidad</h3>
                     <div class="taxonomy-list">
                         
                             <a href="/yogaenbaires/intensidad/alta" class="taxonomy-item">Alta</a>
@@ -203,11 +203,14 @@ Kundalini - Yoga en Baires
     </div>
 </div>
 
-
-
-
 <style>
 
+.categorias-title {
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    margin: 1.5rem 0 0.8rem 0;
+    color: #555;
+}
  
 .menu-toggle {
     height: 30px;  
@@ -416,20 +419,33 @@ img {
     top: 0.75rem;
     color: #999;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.search-container input:focus ~ i {
+    color: #CD5C5C;  
 }
 
 .search-container input {
     width: 100%;
     padding: 0.75rem 0.75rem 0.75rem 2.5rem;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;  
     font-weight: 500;
     background: transparent;
     font-size: 1rem;
+    outline: none;  
+    box-shadow: none;  
+    transition: border-bottom 0.3s ease;  
 }
 
 .search-container input:focus {
-    border-bottom: 2px solid #CD5C5C;
+    border-bottom: 2px solid #CD5C5C;  
+    border-radius: 0;  
+}
+
+.search-container input:focus-visible {
+    outline: none;  
 }
 
 #searchResults {
