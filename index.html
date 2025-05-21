@@ -1169,31 +1169,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <style>
 :root {
-    --brown: #c97516;  
-    --gray: #6c6464;  
-    --red: #CD5C5C;  
-
+    --brown: #c97516;
+    --gray: #6c6464;
+    --red: #CD5C5C;
 }
 
 .container {
     padding: 0 !important;
 }
 
- 
 .content-column hr {
     width: 95%;
-    margin: 1rem auto;  
+    margin: 1rem auto;
     border: none;
     height: 1px;
-    background-color: #e3e2e2;  
+    background-color: #e3e2e2;
 }
-
 
 .projects-gallery-section {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden !important;  
+    overflow: hidden !important;
 }
 
 .simple-projects-grid {
@@ -1206,14 +1203,14 @@ document.addEventListener('DOMContentLoaded', function() {
 .simple-project-card {
     position: relative;
     overflow: hidden;
-    border: none !important;  
-    border-radius: 0 !important;  
+    border: none !important;
+    border-radius: 0 !important;
 }
 
 .image-wrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 138/120;
+    aspect-ratio: 138/120;  
     overflow: hidden;
     border: none !important;
     border-radius: 0 !important;
@@ -1238,11 +1235,9 @@ document.addEventListener('DOMContentLoaded', function() {
     background: rgba(42, 28, 2, 0.4);
     opacity: 0;
     display: flex;
-    align-items: flex-end;  
-    justify-content: flex-start;  
+    align-items: flex-end;
+    justify-content: flex-start;
     transition: opacity 0.3s ease;
-    border: none !important;
-    border-radius: 0 !important;
 }
 
 .taxonomy-overlay {
@@ -1271,14 +1266,31 @@ document.addEventListener('DOMContentLoaded', function() {
     color: var(--gray);
     line-height: 1.3;
     font-weight: 600;
-
 }
 
 .simple-project-title:hover {
     color: #6f3f08 !important;
 }
 
-
+ 
+@media screen and (max-width: 768px) {
+    .simple-projects-grid {
+        grid-template-columns: 1fr;  
+        gap: 30px;  
+    }
+    
+    .image-wrapper {
+        aspect-ratio: 3/1;  
+    }
+    
+    .simple-project-info {
+        padding: 15px 0 0 0;  
+    }
+    
+    .simple-project-title {
+        font-size: 1.4rem;  
+    }
+}
 </style>
 
         </div>
