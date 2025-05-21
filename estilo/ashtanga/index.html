@@ -63,8 +63,7 @@ Ashtanga - Yoga en Baires
     <div class="nav-content">
         <div class="left-items">
             <div class="menu-toggle" id="menuToggle">
-                <img src="/yogaenbaires/images/IG-prof.png" alt="Menu" class="burger-icon">
-                <img src="/yogaenbaires/images/burger.png" alt="Menu Icon" class="burger-icon-hover" style="display:none;">
+                <img src="/yogaenbaires/images/IG-prof.png" alt="Menu" class="burger-icon" width="30" height="30">
             </div>
             
             <a href="/yogaenbaires/" class="logo-link">
@@ -151,7 +150,7 @@ Ashtanga - Yoga en Baires
 
             <nav class="menu-links">
                 <a href="/yogaenbaires/">home: <i>el sendero del yogui</i></a>
-                <a href="/yogaenbaires/blog/about">sobre mi & <i>yogaenbaires</i></a>
+                <a href="/yogaenbaires/blog/sobre-mi/">sobre mi & <i>yogaenbaires</i></a>
                 <a href="/yogaenbaires/blog/">el semillero</a>
                 
                 <div class="taxonomy-section">
@@ -215,6 +214,18 @@ Ashtanga - Yoga en Baires
 .menu-toggle {
     height: 30px;  
     width: 30px;  
+}
+
+
+.burger-icon {
+    width: 30px !important;
+    height: 30px !important;
+    transition: none !important;  
+}
+
+ 
+.menu-toggle {
+    overflow: hidden;  
 }
 
  
@@ -305,19 +316,26 @@ img {
     color: #2c2900;
 }
 
+   
+  .fa, .fab, .fas {
+    font-size: 36px !important;
+
+  }
+
 .social-icons {
     display: flex;
 }
 
 .social-icon {
-    margin-left: 1.4rem;
-    font-size: 24px;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    font-size: 30px;
     color: #6c6464;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #2c2900;
+    color: #CD5C5C;
     transform: scale(1.1);
 }
 
