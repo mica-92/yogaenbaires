@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>el-semillero on Yoga en Baires</title>
+    <link>http://localhost:1313/yogaenbaires/el-semillero/</link>
+    <description>Recent content in el-semillero on Yoga en Baires</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/yogaenbaires/el-semillero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primera Clase</title>
+      <link>http://localhost:1313/yogaenbaires/el-semillero/primera-clase/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/yogaenbaires/el-semillero/primera-clase/</guid>
+      <description>Si nunca tomaste una clase de yoga y queres saber todo lo que necesitas para ir con confianza&amp;hellip; Te invitamos a que leas el siguiente post:&#xD;Ir a tu primera clase de yoga puede generar un poco de incertidumbre, ¡y eso es normal! Aquí tienes algunos consejos para que tu experiencia sea lo más agradable y beneficiosa posible:&#xA;Elige la Clase Adecuada: Busca clases para principiantes o de nivel básico.</description>
+    </item>
+    <item>
+      <title>Estilos de Yoga</title>
+      <link>http://localhost:1313/yogaenbaires/el-semillero/estilos-de-yoga/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/yogaenbaires/el-semillero/estilos-de-yoga/</guid>
+      <description>Hola:&#xA;Ashtanga Vinyasa es un estilo dinámico y vigoroso que se caracteriza por secuencias fijas de posturas enlazadas mediante la respiración, conocida como vinyasa. El énfasis está en la sincronización de la respiración y el movimiento (Tristhana), buscando desarrollar fuerza, resistencia, flexibilidad y una profunda purificación a nivel físico y mental a través de una práctica disciplinada. Es ideal para quienes buscan un desafío físico y mental estructurado y constante.</description>
+    </item>
+    <item>
+      <title>Sobre Mi &amp; Yoga en Baires</title>
+      <link>http://localhost:1313/yogaenbaires/el-semillero/sobre-mi/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/yogaenbaires/el-semillero/sobre-mi/</guid>
+      <description>Bienvenidos a Yoga en Baires.&#xD;Mi nombre es Mica. Profe, practicante, estudiante y amante del yoga.&#xD;El Yoga y yo cruzamos caminos de manera fortuita durante 2018, mientras vivía en México. Playa del Carmen vibraba con una onda hippie acercandome a un espacio que no conocía pero necesitaba. Todos los días decenas de clases de yoga se ofrecian a lo largo y ancho del pueblo muchas de ellas ad honorem.</description>
+    </item>
+  </channel>
+</rss>

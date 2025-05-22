@@ -509,7 +509,11 @@
     transition: color 0.3s ease;
 }
 
-.post-full .markdown a:hover {
+.a:hover {
+    text-decoration: none !important;
+}
+
+.post-full .markdown  {
     color: #6c6464;
     text-decoration: underline;
 }
