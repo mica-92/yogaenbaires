@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         
         
 
@@ -22,13 +22,13 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
         <meta property="og:title" content="Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El Corazón De Caballito. - Yoga en Baires" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Yoga en Baires es un blog sobre reseñas de estudios de yoga en Buenos Aires, Argentina"/>
-<meta property="og:url" content="https://www.yogaenbaires.ar/descripcion/estudio-tradicional-de-ashtanga-yoga-a-cargo-de-ernesto-mu%C3%B1oz-y-ubicado-en-el-coraz%C3%B3n-de-caballito./"/>
+<meta property="og:url" content="http://localhost:1313/descripcion/estudio-tradicional-de-ashtanga-yoga-a-cargo-de-ernesto-mu%C3%B1oz-y-ubicado-en-el-coraz%C3%B3n-de-caballito./"/>
 <meta property="og:site_name" content="Yoga en Baires"/>
 
 
 
 
-<meta property="og:image" content="https://www.yogaenbaires.ar/home/profile.jpg"/>
+<meta property="og:image" content="http://localhost:1313/home/profile.jpg"/>
 
 
 
@@ -42,8 +42,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
 
 
 
-
-<link rel="stylesheet" href="/css/main.min.8b0016bd3749715409bbf7950aea2bfebf1403c12aeed17ac14b5a4113110288.css" integrity="sha256-iwAWvTdJcVQJu/eVCuor/r8UA8Eq7tF6wUtaQRMRAog=" crossorigin="anonymous" media="screen">
+<link rel="stylesheet" href="/css/main.css" media="screen">
 
 
 
@@ -64,6 +63,8 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
         <div class="left-items">
             <div class="menu-toggle" id="menuToggle">
                 <img src="/images/IG-prof.png" alt="Menu" class="burger-icon" width="30" height="30">
+                <img src="/images/logo-menu.png" alt="Menu" class="burger-icon-hover" width="30" height="30">
+
             </div>
             
             <a href="/" class="logo-link">
@@ -97,7 +98,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
                 
                 {
                   title: "\"Ashtanga Yoga Caballito\"",
-                  permalink: "\"https://www.yogaenbaires.ar/estudios/5-ashtanga-yoga-caballito/\"",
+                  permalink: "\"http://localhost:1313/estudios/5-ashtanga-yoga-caballito/\"",
                   barrio: "[\"Caballito\"]",
                   estilo: "[\"Ashtanga\"]",
                   id: "\"5\"",
@@ -106,7 +107,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
                 
                 {
                   title: "\"Caballito de Batalla\"",
-                  permalink: "\"https://www.yogaenbaires.ar/estudios/1-hatha-yoga-palermo/\"",
+                  permalink: "\"http://localhost:1313/estudios/1-hatha-yoga-palermo/\"",
                   barrio: "[\"Caballito\"]",
                   estilo: "[\"Ashtanga\"]",
                   id: "\"2\"",
@@ -115,7 +116,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
                 
                 {
                   title: "\"Kundalini Yoga Belgrano\"",
-                  permalink: "\"https://www.yogaenbaires.ar/estudios/4-kundalini-yoga-belgrano/\"",
+                  permalink: "\"http://localhost:1313/estudios/4-kundalini-yoga-belgrano/\"",
                   barrio: "[\"Belgrano\"]",
                   estilo: "[\"Otros\"]",
                   id: "\"4\"",
@@ -124,7 +125,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
                 
                 {
                   title: "\"Yin Yoga San Telmo\"",
-                  permalink: "\"https://www.yogaenbaires.ar/estudios/3-yin-yoga-san-telmo/\"",
+                  permalink: "\"http://localhost:1313/estudios/3-yin-yoga-san-telmo/\"",
                   barrio: "[\"San Telmo\"]",
                   estilo: "[\"Yin\",\"Hatha\"]",
                   id: "\"3\"",
@@ -133,7 +134,7 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
                 
                 {
                   title: "\"Vinyasa Flow Recoleta\"",
-                  permalink: "\"https://www.yogaenbaires.ar/estudios/2-vinyasa-flow-recoleta/\"",
+                  permalink: "\"http://localhost:1313/estudios/2-vinyasa-flow-recoleta/\"",
                   barrio: "[\"Recoleta\"]",
                   estilo: "[\"Vinyasa\"]",
                   id: "\"2\"",
@@ -206,79 +207,44 @@ Estudio Tradicional De Ashtanga Yoga a Cargo De Ernesto Muñoz Y Ubicado en El C
 </div>
 
 <style>
-.a:hover {
-    text-decoration: none !important;
-}
-
-
-.categorias-title {
-    font-size: 1.6rem !important;
-    font-weight: 600 !important;
-    text-align: left !important;
-    color: #555;
-}
  
 .menu-toggle {
-    height: 30px;  
-    width: 30px;  
+    height: 30px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 1rem;
 }
-
-
-.burger-icon {
-    width: 30px !important;
-    height: 30px !important;
-    transition: none !important;  
-}
-
  
-.menu-toggle {
-    overflow: hidden;  
-}
 
- 
-.right-logo, 
 .burger-icon, 
 .burger-icon-hover {
-    height: 100%;
-    width: auto;  
-    max-height: 30px;  
+    width: 30px !important;
+    height: 30px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
     object-fit: contain;  
 }
 
- 
-@media (max-width: 768px) {
-    .logo-link {
-        height: 25px;  
-    }
-    
-    .right-logo {
-        max-height: 25px;
-    }
-    
-    .menu-toggle {
-        height: 25px;
-        width: 25px;
-    }
-    
-    .burger-icon, 
-    .burger-icon-hover {
-        max-height: 25px;
-    }
+.burger-icon-hover {
+    opacity: 0;
 }
 
- 
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+.menu-toggle:hover .burger-icon {
+    opacity: 0;
 }
 
+.menu-toggle:hover .burger-icon-hover {
+    opacity: 1;
+}
 
  
 .logo-link {
     display: flex;
     align-items: center;
-    height: 30px;  
+    height: 30px;
     margin-right: 1rem;
 }
 
@@ -286,8 +252,8 @@ img {
     height: 100%;
     width: auto;
     max-height: 30px;
+    object-fit: contain;  
 }
-
 
  
 .nav-bar {
@@ -323,12 +289,6 @@ img {
     color: #2c2900;
 }
 
-   
-  .fa, .fab, .fas {
-    font-size: 36px !important;
-
-  }
-
 .social-icons {
     display: flex;
 }
@@ -344,45 +304,6 @@ img {
 .social-icon:hover {
     color: #CD5C5C;
     transform: scale(1.1);
-}
-
-.menu-toggle {
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-    position: relative;
-}
-
-.menu-toggle img {
-    height: 30px;
-    width: auto;
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.burger-icon-hover {
-    opacity: 0;
-}
-
-.menu-toggle:hover .burger-icon {
-    opacity: 0;
-}
-
-.menu-toggle:hover .burger-icon-hover {
-    opacity: 1;
-}
-
-.right-logo {
-    height: 30px;
-    width: auto;
-    margin-right: 1rem;
 }
 
  
@@ -448,29 +369,29 @@ img {
 }
 
 .search-container input:focus ~ i {
-    color: #CD5C5C;  
+    color: #CD5C5C;
 }
 
 .search-container input {
     width: 100%;
     padding: 0.75rem 0.75rem 0.75rem 2.5rem;
     border: none;
-    border-bottom: 1px solid #ddd;  
+    border-bottom: 1px solid #ddd;
     font-weight: 500;
     background: transparent;
     font-size: 1rem;
-    outline: none;  
-    box-shadow: none;  
-    transition: border-bottom 0.3s ease;  
+    outline: none;
+    box-shadow: none;
+    transition: border-bottom 0.3s ease;
 }
 
 .search-container input:focus {
-    border-bottom: 2px solid #CD5C5C;  
-    border-radius: 0;  
+    border-bottom: 2px solid #CD5C5C;
+    border-radius: 0;
 }
 
 .search-container input:focus-visible {
-    outline: none;  
+    outline: none;
 }
 
 #searchResults {
@@ -525,7 +446,8 @@ img {
 }
 
 .taxonomy-item:hover {
-    background: #CD5C5C;
+    background: #cd5c5c45;
+    border: 1px solid #CD5C5C;
     color: white;
 }
 
@@ -560,9 +482,8 @@ img {
     .slogan {
         display: none;
     }
+}
 
-
- 
 @media (max-width: 768px) {
     .slogan {
         display: none;
@@ -577,20 +498,46 @@ img {
         font-size: 0.85rem;
     }
 
-       
-  .fa, .fab, .fas {
-    font-size: 14px !important;
+     
+    .social-icon {
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
+        font-size: 20px;
+    }
 
-  }
+     
+    .logo-link {
+        height: 35px;
+    }
+    
+    .right-logo {
+        max-height: 35px;
+        width: auto;  
+        height: auto;  
+    }
 
-.social-icon {
-    margin-left: 0.5rem !important;
-    margin-right: 0.5rem !important;
-    font-size: 28px;
-    color: #6c6464;
-    transition: all 0.3s ease;
+     
+    .menu-toggle {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .burger-icon,
+    .burger-icon-hover {
+         
+        width: 30px !important;
+        height: 30px !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
+.categorias-title {
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    color: #555;
 }
 </style>
 
@@ -600,21 +547,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menuToggle');
     const menuClose = document.getElementById('menuClose');
     const fullscreenMenu = document.getElementById('fullscreenMenu');
-    const burgerIcon = document.querySelector('.burger-icon');
-    const burgerIconHover = document.querySelector('.burger-icon-hover');
     const navBar = document.querySelector('.nav-bar');
 
     function toggleMenu(isOpen) {
         if (isOpen) {
             fullscreenMenu.style.display = 'none';
-            burgerIcon.style.display = 'block';
-            burgerIconHover.style.display = 'none';
-            navBar.classList.remove('menu-open');
+            document.body.style.overflow = 'auto';
         } else {
             fullscreenMenu.style.display = 'flex';
-            burgerIcon.style.display = 'none';
-            burgerIconHover.style.display = 'block';
-            navBar.classList.add('menu-open');
+            document.body.style.overflow = 'hidden';
         }
     }
 
@@ -1004,7 +945,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <div class="estudios-post-item">
                 <h4 class="estudios-post-title">
-                <a href="https://www.yogaenbaires.ar/estudios/5-ashtanga-yoga-caballito/">#5 - Ashtanga Yoga Caballito</a>
+                <a href="http://localhost:1313/estudios/5-ashtanga-yoga-caballito/">#5 - Ashtanga Yoga Caballito</a>
                 </h4>
                 <style>
  
@@ -1157,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <div class="yoga-post-item">
         <h4 class="yoga-post-title">
-            <a href="https://www.yogaenbaires.ar/blog/primera-clase/">Primera Clase</a>
+            <a href="http://localhost:1313/blog/primera-clase/">Primera Clase</a>
         </h4>
         
         <div class="yoga-post-description">
@@ -1169,7 +1110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <div class="yoga-post-item">
         <h4 class="yoga-post-title">
-            <a href="https://www.yogaenbaires.ar/blog/estilos-de-yoga/">Estilos de Yoga</a>
+            <a href="http://localhost:1313/blog/estilos-de-yoga/">Estilos de Yoga</a>
         </h4>
         
         <div class="yoga-post-description">
