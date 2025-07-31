@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/mica_/Documents/yogaenbaires",
+	"sourceRoot": "C:/Users/mica_/Desktop/YogaEnBaires/website",
 	"sources": [
 		"themes/introduction/assets/sass/style.sass",
 		"themes/introduction/assets/sass/_fonts.sass",
