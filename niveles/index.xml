@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Niveles on Yoga en Baires</title>
-    <link>https://www.yogaenbaires.ar/niveles/</link>
+    <link>https://www.yogaenbaires.com.ar/niveles/</link>
     <description>Recent content in Niveles on Yoga en Baires</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <atom:link href="https://www.yogaenbaires.ar/niveles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.yogaenbaires.com.ar/niveles/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
